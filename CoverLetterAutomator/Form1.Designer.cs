@@ -54,6 +54,7 @@
             this.sex = new System.Windows.Forms.ComboBox();
             this.contactNameFull = new System.Windows.Forms.TextBox();
             this.generateButton = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.nameTableLayout.SuspendLayout();
             this.formPanel.SuspendLayout();
             this.subjectLayoutPanel.SuspendLayout();
@@ -145,6 +146,7 @@
             this.subjectInput.Name = "subjectInput";
             this.subjectInput.Size = new System.Drawing.Size(382, 32);
             this.subjectInput.TabIndex = 1;
+            this.subjectInput.TextChanged += new System.EventHandler(this.subjectInput_TextChanged);
             // 
             // subjectLabel
             // 
@@ -180,6 +182,7 @@
             this.postalCodeInput.Name = "postalCodeInput";
             this.postalCodeInput.Size = new System.Drawing.Size(382, 32);
             this.postalCodeInput.TabIndex = 1;
+            this.postalCodeInput.TextChanged += new System.EventHandler(this.postalCodeInput_TextChanged);
             // 
             // postalCodeLabel
             // 
@@ -215,6 +218,7 @@
             this.provinceInput.Name = "provinceInput";
             this.provinceInput.Size = new System.Drawing.Size(382, 32);
             this.provinceInput.TabIndex = 1;
+            this.provinceInput.TextChanged += new System.EventHandler(this.provinceInput_TextChanged);
             // 
             // Province
             // 
@@ -250,6 +254,7 @@
             this.cityInput.Name = "cityInput";
             this.cityInput.Size = new System.Drawing.Size(382, 32);
             this.cityInput.TabIndex = 1;
+            this.cityInput.TextChanged += new System.EventHandler(this.cityInput_TextChanged);
             // 
             // cityLabel
             // 
@@ -285,6 +290,7 @@
             this.addressInput.Name = "addressInput";
             this.addressInput.Size = new System.Drawing.Size(382, 32);
             this.addressInput.TabIndex = 1;
+            this.addressInput.TextChanged += new System.EventHandler(this.addressInput_TextChanged);
             // 
             // addressLabel
             // 
@@ -320,6 +326,7 @@
             this.companyInput.Name = "companyInput";
             this.companyInput.Size = new System.Drawing.Size(382, 32);
             this.companyInput.TabIndex = 1;
+            this.companyInput.TextChanged += new System.EventHandler(this.companyInput_TextChanged);
             // 
             // companyLabel
             // 
@@ -377,6 +384,7 @@
             this.contactNameFull.Name = "contactNameFull";
             this.contactNameFull.Size = new System.Drawing.Size(253, 32);
             this.contactNameFull.TabIndex = 1;
+            this.contactNameFull.TextChanged += new System.EventHandler(this.contactNameFull_TextChanged);
             // 
             // generateButton
             // 
@@ -388,12 +396,23 @@
             this.generateButton.Text = "Generate";
             this.generateButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.generateButton.UseVisualStyleBackColor = true;
+            this.generateButton.Click += new System.EventHandler(this.generateButton_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(715, 403);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(123, 17);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Created By Ragith";
             // 
             // CoverLetterAutomator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(838, 429);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.generateButton);
             this.Controls.Add(this.formPanel);
             this.Controls.Add(this.nameTableLayout);
@@ -418,6 +437,7 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -449,6 +469,7 @@
         private System.Windows.Forms.TableLayoutPanel subjectLayoutPanel;
         private System.Windows.Forms.TextBox subjectInput;
         private System.Windows.Forms.Button generateButton;
+        private System.Windows.Forms.Label label2;
     }
 }
 

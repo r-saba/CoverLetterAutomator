@@ -79,6 +79,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Documents\Visual Studio 2015\Projects\BattleShipGame\CoverLetterGenerator\CoverLetterGenerator\CoverLetterGenerator.csproj">
+      <Project>{63cbc519-186b-4e7c-abf2-1e74b943b210}</Project>
+      <Name>CoverLetterGenerator</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
