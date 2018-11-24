@@ -31,6 +31,7 @@ namespace CoverLetterAutomator
             ArrayList s = new ArrayList();
             s.Add("Mr"); s.Add("Mrs");
             sex.DataSource = s;
+            folderLocation();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -117,6 +118,25 @@ namespace CoverLetterAutomator
             postalCodeInput.Text = String.Empty;
             sex.Text = String.Empty;
             subjectInput.Text = String.Empty;
+            firstName = "";
+            lastName = "";
+        }
+
+        private void folderLocation()
+        {
+            folderBrowserDialog1.Description = "Select the folder with the template file";
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                LetterGenerator.folderPath = folderBrowserDialog1.SelectedPath.ToString();
+            }
+            while(LetterGenerator.folderPath == null)
+            {
+                folderBrowserDialog1.Description = "Please SELECT the folder with the TEMPLATE file to continue";
+                if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    LetterGenerator.folderPath = folderBrowserDialog1.SelectedPath.ToString();
+                }
+            }
         }
     }
 }

@@ -55,6 +55,7 @@
             this.contactNameFull = new System.Windows.Forms.TextBox();
             this.generateButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.nameTableLayout.SuspendLayout();
             this.formPanel.SuspendLayout();
             this.subjectLayoutPanel.SuspendLayout();
@@ -401,9 +402,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(715, 403);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(-2, 406);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 17);
+            this.label2.Size = new System.Drawing.Size(170, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Created By Ragith";
             // 
@@ -470,6 +472,7 @@
         private System.Windows.Forms.TextBox subjectInput;
         private System.Windows.Forms.Button generateButton;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
     }
 }
 
