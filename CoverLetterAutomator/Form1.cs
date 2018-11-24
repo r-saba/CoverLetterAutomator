@@ -81,9 +81,11 @@ namespace CoverLetterAutomator
 
         private void generateButton_Click(object sender, EventArgs e)
         {
+            disabledButton();
             getInfo();
             LetterGenerator.Run(firstName, lastName, company, address, city, province, postalCode,subject, sexSelected);
             clearFields();
+            enabledButton();
         }
 
         private void getInfo()
@@ -137,6 +139,16 @@ namespace CoverLetterAutomator
                     LetterGenerator.folderPath = folderBrowserDialog1.SelectedPath.ToString();
                 }
             }
+        }
+
+        private void disabledButton()
+        {
+            generateButton.ForeColor = Color.Gray;
+        }
+
+        private void enabledButton()
+        {
+            generateButton.ForeColor = Color.Black;
         }
     }
 }

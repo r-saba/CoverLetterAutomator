@@ -389,21 +389,23 @@
             // 
             // generateButton
             // 
+            this.generateButton.BackColor = System.Drawing.SystemColors.Control;
             this.generateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.generateButton.ForeColor = System.Drawing.SystemColors.ControlText;
             this.generateButton.Location = new System.Drawing.Point(368, 374);
             this.generateButton.Name = "generateButton";
             this.generateButton.Size = new System.Drawing.Size(131, 43);
             this.generateButton.TabIndex = 2;
             this.generateButton.Text = "Generate";
             this.generateButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.generateButton.UseVisualStyleBackColor = true;
+            this.generateButton.UseVisualStyleBackColor = false;
             this.generateButton.Click += new System.EventHandler(this.generateButton_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(-2, 406);
+            this.label2.Location = new System.Drawing.Point(-2, 404);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(170, 25);
             this.label2.TabIndex = 3;
